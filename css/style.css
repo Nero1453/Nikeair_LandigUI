@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 80px;
+    text-decoration: none;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2{
+    color: #333;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span{
+    color: #D9A404;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.content .textBox p{
+    color: #333;
+}
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 30px;
+    background: #D9A404;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.content .textBox a:hover{
+    background: #fff;
+    color: #D9A404;
+    border: #D9A404 1px solid;
+    transition: 0.2s;
+}
+
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-top: 20px;
+    transform: rotate(-40deg);
+}
+
+.container .imgBox img{
+    max-width: 680px;
+}
+
+.fig{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #D9BA5F;
+    clip-path: circle(50% at right 980px);
+}
+
+.thumb{
+    position: absolute;
+    bottom: 3%;
+    transform: translateX(13%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15px) rotate(-30deg);
+}
+.thumb li img{
+    max-width: 140px;
+}
